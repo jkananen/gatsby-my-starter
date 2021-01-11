@@ -1,0 +1,31 @@
+@import '../styles/common/variables';
+
+.header {
+  background: #ed2939;
+  margin-bottom: 1.5rem;
+
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    list-style: none;
+  }
+
+  a {
+    color: $theme-white;
+    margin: 0 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+
+    &:active,
+    &:hover {
+      border-bottom: 1px solid $theme-white;
+    }
+  }
+}

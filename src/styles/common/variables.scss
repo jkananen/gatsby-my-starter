@@ -1,0 +1,15 @@
+/** Breakpoints are per Bootstrap 5.0 @
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+$breakpoints: (
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 991.98px,
+  lg: 1199.98px,
+  xl: 1399.98px,
+);
+
+// Colors
+$theme-red: #ed2939;
+$theme-white: #fff;
+$theme-black: #000;

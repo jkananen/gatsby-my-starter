@@ -1,0 +1,30 @@
+@import '../styles/common/media-queries';
+
+.main {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  /** Container widths are per Bootstrap 5.0 @
+    * https://getbootstrap.com/docs/5.0/layout/containers/
+    */
+
+  @include media-breakpoint-up(xs) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: 540px;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 720px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 960px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 1140px;
+  }
+}

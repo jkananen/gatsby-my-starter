@@ -1,0 +1,35 @@
+// Short page to 100vh
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+// Global styles
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: $theme-white;
+  color: $theme-black;
+}
+
+a {
+  color: $theme-red;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $theme-red;
+  }
+}
