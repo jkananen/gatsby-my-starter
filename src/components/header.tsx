@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Container from './container'
 const styles = require('./header.module.scss')
 
-const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <Container>
@@ -21,5 +21,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header

@@ -33,12 +33,14 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "npm run clean-cache && gatsby develop",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",

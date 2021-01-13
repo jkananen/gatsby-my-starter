@@ -9,24 +9,13 @@ module.exports = {
     name: 'Gatsby starter with a few bells and whistles',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
-    },
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Montserrat'],
+        fonts: [`Montserrat\:300,500,500i,700,900`],
         display: 'swap',
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -34,5 +23,16 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png',
       },
     },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    'gatsby-transformer-sharp',
   ],
 }

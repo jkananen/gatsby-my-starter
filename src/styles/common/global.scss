@@ -25,7 +25,7 @@ a {
   color: $theme-red;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
+  transition: all 0.5s;
 
   &:active,
   &:hover {
