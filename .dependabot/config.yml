@@ -4,3 +4,24 @@ update_configs:
     directory: /
     update_schedule: monthly
     target_branch: main
+    automerged_updates:
+      - match:
+          dependency_name: gatsby
+      - match:
+          dependency_name: gatsby-image
+      - match:
+          dependency_name: gatsby-plugin-manifest
+      - match:
+          dependency_name: gatsby-plugin-postcss
+      - match:
+          dependency_name: gatsby-plugin-react-helmet
+      - match:
+          dependency_name: gatsby-plugin-sharp
+      - match:
+          dependency_name: gatsby-plugin-sitemap
+      - match:
+          dependency_name: gatsby-source-filesystem
+      - match:
+          dependency_name: gatsby-source-sanity
+      - match:
+          dependency_name: gatsby-transformer-sharp
