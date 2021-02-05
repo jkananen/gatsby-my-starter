@@ -4,6 +4,9 @@ update_configs:
     directory: /
     update_schedule: monthly
     target_branch: main
+    commit_message:
+      prefix: "chore"
+      include_scope: true
     automerged_updates:
       - match:
           dependency_name: gatsby

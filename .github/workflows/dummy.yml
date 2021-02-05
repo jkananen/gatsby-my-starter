@@ -1,0 +1,15 @@
+---
+name: Dummy Check
+
+on:
+  pull_request:
+    types: [opened]
+    branches: [main]
+
+jobs:
+  run_dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call dummy check to allow Dependabot automerge
+        if: ${{ github.event_name == 'pull_request' }}
+        run: echo "Run dummy"
