@@ -5,7 +5,7 @@ update_configs:
     update_schedule: monthly
     target_branch: main
     commit_message:
-      prefix: "chore"
+      prefix: 'chore'
       include_scope: true
     automerged_updates:
       - match:
@@ -19,6 +19,8 @@ update_configs:
       - match:
           dependency_name: gatsby-plugin-react-helmet
       - match:
+          dependency_name: gatsby-plugin-sass
+      - match:
           dependency_name: gatsby-plugin-sharp
       - match:
           dependency_name: gatsby-plugin-sitemap
@@ -28,3 +30,9 @@ update_configs:
           dependency_name: gatsby-source-sanity
       - match:
           dependency_name: gatsby-transformer-sharp
+      - match:
+          dependency_name: react
+      - match:
+          dependency_name: react-dom
+      - match:
+          dependency_name: sass
