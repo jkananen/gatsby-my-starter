@@ -4,7 +4,7 @@
   "description": "Gatsby starter with some often needed plugins and utils",
   "version": "0.0.1",
   "dependencies": {
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.0.1",
     "gatsby-image": "^3.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^3.0.0",
